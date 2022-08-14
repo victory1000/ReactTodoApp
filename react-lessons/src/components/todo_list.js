@@ -1,5 +1,6 @@
 import React from "react";
 import TodoListItem from './todo_list_item';
+import '../styles/todo-list.css';
 
 const TodoList = ({ todos }) => {
   const items = todos.map((el) => {
