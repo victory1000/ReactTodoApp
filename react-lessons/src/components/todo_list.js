@@ -8,7 +8,13 @@ const TodoList = ({ todos }) => {
     return <li key={el.id} className="list-group-item"><TodoListItem { ...elProps } /></li>
   });
 
-  return <ul className="list-group todo-list">{items}</ul>;
+  return (
+    <div className="row">
+      <div className="col-sm-6">
+        <ul className="list-group todo-list">{items}</ul>
+      </div>
+    </div>
+  );
 }
 
 export default TodoList;

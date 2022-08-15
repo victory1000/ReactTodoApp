@@ -12,7 +12,7 @@ const App = () => {
   ]
 
   return (
-    <div>
+    <div className="panel panel-default">
       <AppHeader />
       <SearchPanel />
       <TodoList todos={ todoData }/>
